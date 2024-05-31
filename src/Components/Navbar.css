@@ -1,9 +1,0 @@
-.navbar {
-    background: rgb(174, 238, 179); /* Fallback color */
-    background: radial-gradient(
-      circle,
-      rgba(174, 238, 179, 1) 0%,
-      rgba(148, 180, 233, 1) 100%
-    ); /* Gradient background */
-  }
-  
