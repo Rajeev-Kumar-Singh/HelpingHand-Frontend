@@ -1,0 +1,1 @@
+console.log('put all your statics file here like : image,logo,download,upload folder also');
