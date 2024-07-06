@@ -1,5 +1,19 @@
 import React from "react";
-import { Container, Grid, Typography, Link, Divider } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Typography,
+  Link,
+  Divider,
+  IconButton,
+} from "@mui/material";
+import {
+  Facebook,
+  Twitter,
+  YouTube,
+  Instagram,
+  LinkedIn,
+} from "@mui/icons-material";
 
 function Footer() {
   return (
@@ -177,6 +191,73 @@ function Footer() {
             </ul>
           </Grid>
         </Grid>
+        <Divider sx={{ borderColor: "#fff", margin: "40px 0" }} />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            color: "#fff",
+            marginBottom: "20px",
+          }}
+        >
+          <div>
+            <Typography variant="body2">Helping Hand</Typography>
+            <Typography variant="body2">A- 38, Pocket 4, Phi 2</Typography>
+            <Typography variant="body2">
+              Ground Floor, Greater Noida - 201310
+            </Typography>
+            <Typography variant="body2">
+              Email:{" "}
+              <Link href="mailto:rajeevsinghrajput38@gmail.com" color="inherit">
+                rajeevsinghrajput38@gmail.com
+              </Link>
+            </Typography>
+            <Typography variant="body2">Contact number: 8210755913</Typography>
+          </div>
+          <div>
+            <IconButton
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
+            >
+              <Facebook />
+            </IconButton>
+            <IconButton
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
+            >
+              <YouTube />
+            </IconButton>
+            <IconButton
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
+            >
+              <Instagram />
+            </IconButton>
+            <IconButton
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: "#fff" }}
+            >
+              <LinkedIn />
+            </IconButton>
+          </div>
+        </div>
       </Container>
     </footer>
   );
