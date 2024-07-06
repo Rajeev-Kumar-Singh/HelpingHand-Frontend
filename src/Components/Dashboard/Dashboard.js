@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Navbar/Header";
 import Introduction from "../Pages/Introduction";
+import OurPrograms from "../Pages/OurPrograms";
 import Footer from "../Navbar/Footer";
 
 function Dashboard() {
@@ -8,6 +9,7 @@ function Dashboard() {
     <>
       <Header />
       <Introduction />
+      <OurPrograms />
       <Footer />
     </>
   );
