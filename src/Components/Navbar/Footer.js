@@ -19,11 +19,15 @@ function Footer() {
   return (
     <footer style={{ backgroundColor: "#333", padding: "60px 40px" }}>
       <Container maxWidth="md">
-        <Grid container justify="center" spacing={4}>
+        <Grid container justifyContent="center" spacing={4}>
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Typography
               variant="h6"
-              style={{ color: "#fff", marginBottom: "20px" }}
+              style={{
+                color: "#fff",
+                marginBottom: "20px",
+                fontWeight: "bold",
+              }}
             >
               About Us
             </Typography>
@@ -55,9 +59,13 @@ function Footer() {
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Typography
               variant="h6"
-              style={{ color: "#fff", marginBottom: "20px" }}
+              style={{
+                color: "#fff",
+                marginBottom: "20px",
+                fontWeight: "bold",
+              }}
             >
-              Program
+              Programs
             </Typography>
             <Divider sx={{ borderColor: "#fff", marginBottom: "20px" }} />
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
@@ -101,7 +109,11 @@ function Footer() {
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Typography
               variant="h6"
-              style={{ color: "#fff", marginBottom: "20px" }}
+              style={{
+                color: "#fff",
+                marginBottom: "20px",
+                fontWeight: "bold",
+              }}
             >
               Campaign
             </Typography>
@@ -147,7 +159,11 @@ function Footer() {
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Typography
               variant="h6"
-              style={{ color: "#fff", marginBottom: "20px" }}
+              style={{
+                color: "#fff",
+                marginBottom: "20px",
+                fontWeight: "bold",
+              }}
             >
               Get Involved
             </Typography>
@@ -202,12 +218,19 @@ function Footer() {
           }}
         >
           <div>
-            <Typography variant="body2">Helping Hand</Typography>
-            <Typography variant="body2">A- 38, Pocket 4, Phi 2</Typography>
-            <Typography variant="body2">
+            <Typography
+              variant="body2"
+              sx={{ fontWeight: "bold", mb: 1, fontSize: 18 }}
+            >
+              Helping Hand
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              A- 38, Pocket 4, Phi 2
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
               Ground Floor, Greater Noida - 201310
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body2" sx={{ mb: 1 }}>
               Email:{" "}
               <Link href="mailto:rajeevsinghrajput38@gmail.com" color="inherit">
                 rajeevsinghrajput38@gmail.com
@@ -220,41 +243,41 @@ function Footer() {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#fff", fontSize: 36 }}
             >
-              <Facebook />
+              <Facebook fontSize="inherit" />
             </IconButton>
             <IconButton
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#fff", fontSize: 36 }}
             >
-              <Twitter />
+              <Twitter fontSize="inherit" />
             </IconButton>
             <IconButton
               href="https://www.youtube.com"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#fff", fontSize: 36 }}
             >
-              <YouTube />
+              <YouTube fontSize="inherit" />
             </IconButton>
             <IconButton
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#fff", fontSize: 36 }}
             >
-              <Instagram />
+              <Instagram fontSize="inherit" />
             </IconButton>
             <IconButton
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              sx={{ color: "#fff" }}
+              sx={{ color: "#fff", fontSize: 36 }}
             >
-              <LinkedIn />
+              <LinkedIn fontSize="inherit" />
             </IconButton>
           </div>
         </div>

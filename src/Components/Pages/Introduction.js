@@ -109,7 +109,11 @@ function Introduction() {
             lives of those who need it most. Together, we can create a ripple of
             kindness that spreads far and wide.
           </Typography>
-          <Button variant="contained" color="primary" sx={{ mr: 2 }}>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{ mr: 2, bgcolor: "green" }}
+          >
             Learn More
           </Button>
           <Button variant="outlined" color="primary">
