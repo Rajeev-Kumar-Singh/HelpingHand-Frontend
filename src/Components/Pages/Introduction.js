@@ -16,10 +16,18 @@ function Introduction() {
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{ mb: 2, color: "green", fontWeight: "bold" }}
+          >
             Welcome to Helping Hand
           </Typography>
-          <Typography variant="body1" component="p" sx={{ mb: 4 }}>
+          <Typography
+            variant="body1"
+            component="p"
+            sx={{ mb: 4, fontSize: 20 }}
+          >
             Helping Hand is a non-governmental organization (NGO) dedicated to
             lending a hand to those in need. Our mission is to provide support
             to poor people, orphan children, and vulnerable communities,
@@ -28,10 +36,18 @@ function Introduction() {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+          <Typography
+            variant="h3"
+            component="h3"
+            sx={{ mb: 2, color: "green" }}
+          >
             Our Focus Areas:
           </Typography>
-          <Typography variant="body1" component="ul" sx={{ mb: 4 }}>
+          <Typography
+            variant="body1"
+            component="ul"
+            sx={{ mb: 4, fontSize: 20 }}
+          >
             <li>
               Education: We believe that education is the key to unlocking a
               child's potential. Our organization provides educational support
@@ -58,10 +74,18 @@ function Introduction() {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+          <Typography
+            variant="h3"
+            component="h3"
+            sx={{ mb: 2, color: "green" }}
+          >
             Our Vision:
           </Typography>
-          <Typography variant="body1" component="p" sx={{ mb: 4 }}>
+          <Typography
+            variant="body1"
+            component="p"
+            sx={{ mb: 4, fontSize: 20 }}
+          >
             To create a world where every individual has access to education, a
             safe home, and a healthy environment. We envision a society where
             animals are treated with kindness and respect, and where everyone
@@ -69,10 +93,18 @@ function Introduction() {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+          <Typography
+            variant="h3"
+            component="h3"
+            sx={{ mb: 2, color: "green" }}
+          >
             Join Us:
           </Typography>
-          <Typography variant="body1" component="p" sx={{ mb: 4 }}>
+          <Typography
+            variant="body1"
+            component="p"
+            sx={{ mb: 4, fontSize: 20 }}
+          >
             By supporting Helping Hand, you can make a real difference in the
             lives of those who need it most. Together, we can create a ripple of
             kindness that spreads far and wide.
