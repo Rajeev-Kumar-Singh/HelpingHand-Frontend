@@ -6,7 +6,11 @@ import PlantImg from "../../assets/IntroductionPage/plantImg.jpg";
 import CowImg from "../../assets/IntroductionPage/cowImg.jpg";
 
 function Introduction() {
-  const images = [HandImg, PlantImg, CowImg];
+  const images = [
+    { src: HandImg, alt: "Helping hand photo" },
+    { src: PlantImg, alt: "Planting tree photo" },
+    { src: CowImg, alt: "Cow in a field photo" },
+  ];
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
@@ -89,8 +93,8 @@ function Introduction() {
                 sx={{ borderRadius: 16, overflow: "hidden" }}
               >
                 <img
-                  src={image}
-                  alt={`Image ${i + 1}`}
+                  src={image.src}
+                  alt={image.alt}
                   style={{ width: "100%", height: "700px", objectFit: "cover" }}
                 />
               </Paper>
