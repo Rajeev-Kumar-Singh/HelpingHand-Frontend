@@ -16,13 +16,13 @@ function Introduction() {
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Typography
+          {/* <Typography
             variant="h2"
             component="h2"
             sx={{ mb: 2, color: "green", fontWeight: "bold" }}
           >
             Welcome to Helping Hand
-          </Typography>
+          </Typography> */}
           <Typography
             variant="body1"
             component="p"
@@ -37,8 +37,8 @@ function Introduction() {
         </Grid>
         <Grid item xs={12}>
           <Typography
-            variant="h3"
-            component="h3"
+            variant="h4"
+            component="h4"
             sx={{ mb: 2, color: "green" }}
           >
             Our Focus Areas:
@@ -75,8 +75,8 @@ function Introduction() {
         </Grid>
         <Grid item xs={12}>
           <Typography
-            variant="h3"
-            component="h3"
+            variant="h4"
+            component="h4"
             sx={{ mb: 2, color: "green" }}
           >
             Our Vision:
@@ -94,8 +94,8 @@ function Introduction() {
         </Grid>
         <Grid item xs={12}>
           <Typography
-            variant="h3"
-            component="h3"
+            variant="h5"
+            component="h5"
             sx={{ mb: 2, color: "green" }}
           >
             Join Us:
