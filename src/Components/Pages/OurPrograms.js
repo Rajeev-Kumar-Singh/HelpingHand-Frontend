@@ -63,7 +63,7 @@ function OurPrograms() {
               elevation={3}
               sx={{
                 padding: 2,
-                background: "linear-gradient(45deg, #a0e04d, #3cb371)",
+                background: "linear-gradient(45deg, #C6F7D0, #8BC34A)",
               }}
             >
               <Box display="flex" alignItems="center">
