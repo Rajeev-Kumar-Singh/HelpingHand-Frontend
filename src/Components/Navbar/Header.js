@@ -26,7 +26,7 @@ function Header() {
   };
 
   const menuItems = {
-    aboutUs: ["Helping Hand", "Impact", "Privacy Policy"],
+    aboutUs: ["Yashashvi Foundation", "Impact", "Privacy Policy"],
     program: [
       "Education",
       "Health",
@@ -79,11 +79,11 @@ function Header() {
         >
           <img
             src={LogoIcom}
-            alt="Helping Hand Logo"
+            alt="Yashashvi Foundation Logo"
             style={{ width: 140, height: 140 }}
           />
           <Typography variant="h6" sx={{ color: "black", fontWeight: "bold" }}>
-            Helping Hand
+          Yashashvi Foundation
           </Typography>
         </div>
         <nav sx={{ display: "flex", alignItems: "flex-end" }}>
