@@ -36,7 +36,7 @@ function Footer() {
               <li style={{ marginBottom: "10px" }}>
                 <Typography variant="body1" style={{ color: "#fff" }}>
                   <Link href="#" color="inherit" underline="none">
-                    Helping Hand
+                  Yashashvi Foundation
                   </Link>
                 </Typography>
               </li>
@@ -222,7 +222,7 @@ function Footer() {
               variant="body2"
               sx={{ fontWeight: "bold", mb: 1, fontSize: 18 }}
             >
-              Helping Hand
+              Yashashvi Foundation
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }}>
               A- 38, Pocket 4, Phi 2

@@ -7,7 +7,7 @@ import CowImg from "../../assets/IntroductionPage/cowImg.jpg";
 
 function Introduction() {
   const images = [
-    { src: HandImg, alt: "Helping hand photo" },
+    { src: HandImg, alt: "Yashashvi Foundation photo" },
     { src: PlantImg, alt: "Planting tree photo" },
     { src: CowImg, alt: "Cow in a field photo" },
   ];
@@ -21,18 +21,18 @@ function Introduction() {
             component="h2"
             sx={{ mb: 2, color: "green", fontWeight: "bold" }}
           >
-            Welcome to Helping Hand
+            Welcome to Yashashvi Foundation
           </Typography> */}
           <Typography
             variant="body1"
             component="p"
             sx={{ mb: 4, fontSize: 20 }}
           >
-            Helping Hand is a non-governmental organization (NGO) dedicated to
-            lending a hand to those in need. Our mission is to provide support
-            to poor people, orphan children, and vulnerable communities,
-            empowering them to break the cycle of poverty and build a brighter
-            future.
+            Yashashvi Foundation is a non-governmental organization (NGO)
+            dedicated to lending a hand to those in need. Our mission is to
+            provide support to poor people, orphan children, and vulnerable
+            communities, empowering them to break the cycle of poverty and build
+            a brighter future.
           </Typography>
         </Grid>
         <Grid item xs={12}>
@@ -66,10 +66,10 @@ function Introduction() {
               practices, and protect biodiversity.
             </li>
             <li>
-              Animal Welfare: At Helping Hand, we believe that all living beings
-              deserve compassion and care. Our organization works tirelessly to
-              protect and preserve animal life, with a special focus on cows and
-              other animals.
+              Animal Welfare: At Yashashvi Foundation, we believe that all
+              living beings deserve compassion and care. Our organization works
+              tirelessly to protect and preserve animal life, with a special
+              focus on cows and other animals.
             </li>
           </Typography>
         </Grid>
@@ -105,9 +105,9 @@ function Introduction() {
             component="p"
             sx={{ mb: 4, fontSize: 20 }}
           >
-            By supporting Helping Hand, you can make a real difference in the
-            lives of those who need it most. Together, we can create a ripple of
-            kindness that spreads far and wide.
+            By supporting Yashashvi Foundation, you can make a real difference
+            in the lives of those who need it most. Together, we can create a
+            ripple of kindness that spreads far and wide.
           </Typography>
           <Button
             variant="contained"
