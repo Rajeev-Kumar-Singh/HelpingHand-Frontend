@@ -36,7 +36,7 @@ function Footer() {
               <li style={{ marginBottom: "10px" }}>
                 <Typography variant="body1" style={{ color: "#fff" }}>
                   <Link href="#" color="inherit" underline="none">
-                  Yashashvi Foundation
+                    Yashashvi Foundation
                   </Link>
                 </Typography>
               </li>
@@ -227,16 +227,6 @@ function Footer() {
             <Typography variant="body2" sx={{ mb: 1 }}>
               Muzaffarpur,Bihar
             </Typography>
-            // <Typography variant="body2" sx={{ mb: 1 }}>
-            //   Ground Floor, Greater Noida - 201310
-            // </Typography>
-            // <Typography variant="body2" sx={{ mb: 1 }}>
-            //   Email:{" "}
-            //   <Link href" color="inherit">
-                
-            //   </Link>
-            // </Typography>
-            // <Typography variant="body2">Contact number: 8210755913</Typography>
           </div>
           <div>
             <IconButton
