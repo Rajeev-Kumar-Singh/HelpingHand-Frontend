@@ -225,18 +225,18 @@ function Footer() {
               Yashashvi Foundation
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }}>
-              A- 38, Pocket 4, Phi 2
+              Muzaffarpur,Bihar
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1 }}>
-              Ground Floor, Greater Noida - 201310
-            </Typography>
-            <Typography variant="body2" sx={{ mb: 1 }}>
-              Email:{" "}
-              <Link href="mailto:rajeevsinghrajput38@gmail.com" color="inherit">
-                rajeevsinghrajput38@gmail.com
-              </Link>
-            </Typography>
-            <Typography variant="body2">Contact number: 8210755913</Typography>
+            // <Typography variant="body2" sx={{ mb: 1 }}>
+            //   Ground Floor, Greater Noida - 201310
+            // </Typography>
+            // <Typography variant="body2" sx={{ mb: 1 }}>
+            //   Email:{" "}
+            //   <Link href" color="inherit">
+                
+            //   </Link>
+            // </Typography>
+            // <Typography variant="body2">Contact number: 8210755913</Typography>
           </div>
           <div>
             <IconButton
