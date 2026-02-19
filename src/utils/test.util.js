@@ -1,1 +1,0 @@
-console.log('Hi , Here you can make custom function which is common for entire application');
