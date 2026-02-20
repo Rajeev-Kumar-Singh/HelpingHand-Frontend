@@ -2,26 +2,26 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "Components/ui/button";
 import { useToast } from "Components/ui/use-toast";
-import { Heart, DollarSign } from "lucide-react";
+import { Heart, IndianRupee } from "lucide-react";
 
 const Donate = () => {
   const { toast } = useToast();
 
   const tiers = [
     {
-      amount: 25,
+      amount: 2500,
       impact: "Provides nutritious meals for 5 families for a week",
     },
     {
-      amount: 50,
+      amount: 5000,
       impact: "Provides school supplies and books for 10 children",
     },
     {
-      amount: 100,
+      amount: 10000,
       impact: "Provides essential medical care for 20 people",
     },
     {
-      amount: 500,
+      amount: 50000,
       impact: "Provides clean water infrastructure for an entire village",
     },
   ];
@@ -78,7 +78,7 @@ const Donate = () => {
               onClick={() => handleDonate("custom")}
               className="bg-white text-orange-600 hover:bg-gray-100 px-12 py-8 text-xl font-bold rounded-2xl shadow-2xl hover:shadow-white/50 transition-all duration-300"
             >
-              <DollarSign className="mr-2" size={28} />
+              <IndianRupee className="mr-2" size={28} />
               Donate Now
             </Button>
           </motion.div>
@@ -96,7 +96,7 @@ const Donate = () => {
               onClick={() => handleDonate(tier.amount)}
             >
               <div className="text-4xl font-bold mb-3 font-serif">
-                ${tier.amount}
+                ₹{tier.amount}
               </div>
               <p className="text-white/90 leading-relaxed">{tier.impact}</p>
             </motion.div>
