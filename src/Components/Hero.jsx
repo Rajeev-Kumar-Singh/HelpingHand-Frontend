@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "Components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroimage from "../assests/heroimage.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -19,7 +20,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1643321610692-719deb378a33"
+          src={heroimage}
           alt="Volunteers working together to make a difference in the community"
           className="w-full h-full object-cover"
         />
