@@ -111,10 +111,10 @@ const Footer = () => {
               Contact Us
             </span>
             <ul className="space-y-3 text-gray-400">
-              <li>123 Yashashvi Street</li>
-              <li>City, Country</li>
-              <li>+1 (555) 123-4567</li>
-              <li>info@yashashvifoundation.org</li>
+              <li>Muzaffarpur</li>
+              <li>Bihar, India</li>
+              <li>+91 8210******</li>
+              <li>rk7864104@gmail.com</li>
             </ul>
           </div>
 

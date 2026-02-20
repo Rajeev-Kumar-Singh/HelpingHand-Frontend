@@ -18,17 +18,17 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Address",
-      value: "123 Yashashvi Street, City, Country",
+      value: "Muzaffarpur, Bihar, India",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 8210******",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "info@yashashvifoundation.org",
+      value: "rk7864104@gmail.com",
     },
   ];
 
@@ -110,7 +110,7 @@ const Contact = () => {
                   type="text"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                   className="w-full"
                 />
               </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="Your Email"
                   className="w-full"
                 />
               </div>
