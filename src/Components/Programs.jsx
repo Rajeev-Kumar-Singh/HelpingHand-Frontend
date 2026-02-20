@@ -1,34 +1,41 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Button } from 'Components/ui/button';
-import { useToast } from 'Components/ui/use-toast';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Button } from "Components/ui/button";
+import { useToast } from "Components/ui/use-toast";
+import { ArrowRight } from "lucide-react";
+import educationimage from "../assests/educationimage.png";
+import medicalimage from "../assests/medicalimage.png";
+import freshwaterimage from "../assests/freshwaterimage.png";
 
 const Programs = () => {
   const { toast } = useToast();
 
   const programs = [
     {
-      image: 'https://images.unsplash.com/photo-1682009562551-419cbd18091b',
-      title: 'Education for All',
-      description: 'Providing quality education to underprivileged children through scholarships, school infrastructure development, and teacher training programs. We believe education is the foundation for breaking the cycle of poverty.'
+      image: educationimage,
+      title: "Education for All",
+      description:
+        "Providing quality education to underprivileged children through scholarships, school infrastructure development, and teacher training programs. We believe education is the foundation for breaking the cycle of poverty.",
     },
     {
-      image: 'https://images.unsplash.com/photo-1652149590102-6480bd4208ad',
-      title: 'Healthcare Access',
-      description: 'Ensuring access to essential healthcare services through mobile clinics, health awareness campaigns, and partnerships with local medical facilities. Every person deserves quality healthcare.'
+      image: medicalimage,
+      title: "Healthcare Access",
+      description:
+        "Ensuring access to essential healthcare services through mobile clinics, health awareness campaigns, and partnerships with local medical facilities. Every person deserves quality healthcare.",
     },
     {
-      image: 'https://images.unsplash.com/photo-1682009562551-419cbd18091b',
-      title: 'Clean Water Initiative',
-      description: 'Bringing clean water to communities in need through well construction, water purification systems, and sanitation education. Clean water is a fundamental human right.'
-    }
+      image: freshwaterimage,
+      title: "Clean Water Initiative",
+      description:
+        "Bringing clean water to communities in need through well construction, water purification systems, and sanitation education. Clean water is a fundamental human right.",
+    },
   ];
 
   const handleLearnMore = () => {
     toast({
       title: "Coming Soon",
-      description: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
+      description:
+        "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
     });
   };
 
@@ -45,7 +52,8 @@ const Programs = () => {
             Our Programs
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transforming lives through targeted initiatives that address critical needs
+            Transforming lives through targeted initiatives that address
+            critical needs
           </p>
         </motion.div>
 
