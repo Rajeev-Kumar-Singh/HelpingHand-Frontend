@@ -5,7 +5,7 @@ import Hero from "Components/Hero";
 import About from "Components/About";
 import Programs from "Components/Programs";
 import Impact from "Components/Impact";
-import Team from "Components/Team";
+// import Team from "Components/Team";
 import Donate from "Components/Donate";
 import Contact from "Components/Contact";
 import Footer from "Components/Footer";
@@ -28,7 +28,7 @@ const HomePage = () => {
           <About />
           <Programs />
           <Impact />
-          <Team />
+          {/* <Team /> */}
           <Donate />
           <Contact />
         </main>

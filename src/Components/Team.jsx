@@ -5,26 +5,26 @@ import { Facebook, Twitter, Linkedin } from "lucide-react";
 const Team = () => {
   const team = [
     {
-      image: "https://images.unsplash.com/photo-1493882552576-fce827c6161e",
-      name: "Sarah Johnson",
+      // image: "https://images.unsplash.com/photo-1493882552576-fce827c6161e",
+      name: "Rajeev Kumar",
       role: "Executive Director",
       bio: "Leading our mission with passion and dedication for over 15 years, Sarah brings extensive experience in international development and community empowerment.",
     },
     {
-      image: "https://images.unsplash.com/photo-1479800800845-03752b6188fa",
-      name: "Michael Chen",
+      // image: "https://images.unsplash.com/photo-1479800800845-03752b6188fa",
+      name: "Satyam Kumar",
       role: "Program Director",
       bio: "Overseeing our global initiatives with strategic vision, Michael ensures every program delivers measurable impact and sustainable results.",
     },
     {
-      image: "https://images.unsplash.com/photo-1493882552576-fce827c6161e",
-      name: "Emily Rodriguez",
+      // image: "https://images.unsplash.com/photo-1493882552576-fce827c6161e",
+      name: "Aman Singh",
       role: "Community Outreach",
       bio: "Building bridges with local communities worldwide, Emily fosters partnerships that create lasting change and empower grassroots leaders.",
     },
     {
-      image: "https://images.unsplash.com/photo-1479800800845-03752b6188fa",
-      name: "David Kim",
+      // image: "https://images.unsplash.com/photo-1479800800845-03752b6188fa",
+      name: "Aniket Kumar",
       role: "Finance Manager",
       bio: "Ensuring transparency and accountability in all our operations, David manages resources with integrity to maximize our impact.",
     },
