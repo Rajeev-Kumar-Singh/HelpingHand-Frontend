@@ -18,7 +18,7 @@ const Team = () => {
       image: rajeevImg,
       name: "Rajeev Kumar",
       role: "Executive Director",
-      bio: "Leading our mission with passion and dedication for over 15 years, Rajeev brings extensive experience in international development and community empowerment.",
+      bio: "Leading our mission with passion and dedication for over 5 years, Rajeev brings extensive experience in international development and community empowerment.",
     },
     {
       image: satyamImg,
