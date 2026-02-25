@@ -1,32 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import rajeevImg from "../assests/Rajeev_Image.png";
+import satyamImg from "../assests/Satyam_Image.png";
 
 const Team = () => {
+  const getInitials = (name) =>
+    name
+      .split(" ")
+      .map((n) => n[0])
+      .slice(0, 2)
+      .join("")
+      .toUpperCase();
+
   const team = [
     {
-      // image: "https://images.unsplash.com/photo-1493882552576-fce827c6161e",
+      image: rajeevImg,
       name: "Rajeev Kumar",
       role: "Executive Director",
-      bio: "Leading our mission with passion and dedication for over 15 years, Sarah brings extensive experience in international development and community empowerment.",
+      bio: "Leading our mission with passion and dedication for over 15 years, Rajeev brings extensive experience in international development and community empowerment.",
     },
     {
-      // image: "https://images.unsplash.com/photo-1479800800845-03752b6188fa",
+      image: satyamImg,
       name: "Satyam Kumar",
       role: "Program Director",
-      bio: "Overseeing our global initiatives with strategic vision, Michael ensures every program delivers measurable impact and sustainable results.",
+      bio: "Overseeing our global initiatives with strategic vision, Satyam ensures every program delivers measurable impact and sustainable results.",
     },
     {
-      // image: "https://images.unsplash.com/photo-1493882552576-fce827c6161e",
-      name: "Aman Singh",
+      name: "Golden Singh",
       role: "Community Outreach",
-      bio: "Building bridges with local communities worldwide, Emily fosters partnerships that create lasting change and empower grassroots leaders.",
+      bio: "Building bridges with local communities worldwide, Golden fosters partnerships that create lasting change and empower grassroots leaders.",
     },
     {
-      // image: "https://images.unsplash.com/photo-1479800800845-03752b6188fa",
-      name: "Aniket Kumar",
+      name: "Kunal Kishore",
       role: "Finance Manager",
-      bio: "Ensuring transparency and accountability in all our operations, David manages resources with integrity to maximize our impact.",
+      bio: "Ensuring transparency and accountability in all our operations, Kunal manages resources with integrity to maximize our impact.",
     },
   ];
 
@@ -61,13 +69,18 @@ const Team = () => {
             >
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
                 <div className="relative h-80 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={`Portrait of ${member.name}, ${member.role}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={`Portrait of ${member.name}, ${member.role}`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-700 text-6xl font-bold">
+                      {getInitials(member.name)}
+                    </div>
+                  )}
 
-                  {/* Hover Overlay with Social Links */}
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
