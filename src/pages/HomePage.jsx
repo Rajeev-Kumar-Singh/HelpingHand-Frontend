@@ -4,6 +4,7 @@ import Header from "Components/Header";
 import Hero from "Components/Hero";
 import About from "Components/About";
 import Programs from "Components/Programs";
+import Blog from "Components/Blog.jsx";
 import Impact from "Components/Impact";
 import Team from "Components/Team";
 import Donate from "Components/Donate";
@@ -27,6 +28,7 @@ const HomePage = () => {
           <Hero />
           <About />
           <Programs />
+          <Blog />
           <Impact />
           <Team />
           <Donate />
