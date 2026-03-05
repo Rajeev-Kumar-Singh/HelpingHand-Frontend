@@ -69,13 +69,6 @@ const Blog = () => {
           onSortChange={setSortOrder}
         />
 
-        {/* Debug banner (temporary) */}
-        <div className="mb-6 text-sm text-gray-600">
-          Debug: total={blogData.length} • visible=
-          {filteredAndSortedPosts.length} • category={activeCategory} • query="
-          {searchQuery}"
-        </div>
-
         {filteredAndSortedPosts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAndSortedPosts.map((post, index) => (
