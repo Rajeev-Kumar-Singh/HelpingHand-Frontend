@@ -46,9 +46,8 @@ const Blog = () => {
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-serif">
@@ -69,6 +68,13 @@ const Blog = () => {
           sortOrder={sortOrder}
           onSortChange={setSortOrder}
         />
+
+        {/* Debug banner (temporary) */}
+        <div className="mb-6 text-sm text-gray-600">
+          Debug: total={blogData.length} • visible=
+          {filteredAndSortedPosts.length} • category={activeCategory} • query="
+          {searchQuery}"
+        </div>
 
         {filteredAndSortedPosts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -29,9 +29,8 @@ const BlogRelatedPosts = ({ currentPostId, category }) => {
     <div className="mt-16 pt-16 border-t border-gray-200">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
       >
         <h3 className="text-3xl font-bold text-gray-900 mb-8 font-serif">
           Related Stories
