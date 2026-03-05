@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { blogData } from "../data/blogData.jsx";
+import { blogData } from "../data/blogData.js";
 import BlogCard from "./BlogCard.jsx";
 import BlogFilter from "./BlogFilter.jsx";
 import BlogNewsletterSignup from "./BlogNewsletterSignup.jsx";

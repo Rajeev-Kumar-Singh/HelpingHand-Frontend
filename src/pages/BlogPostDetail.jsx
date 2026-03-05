@@ -15,7 +15,7 @@ import {
   Share2,
   Home,
 } from "lucide-react";
-import { blogData } from "data/blogData.jsx";
+import { blogData } from "data/blogData.js";
 import Header from "Components/Header.jsx";
 import Footer from "Components/Footer.jsx";
 import BlogRelatedPosts from "Components/BlogRelatedPosts.jsx";

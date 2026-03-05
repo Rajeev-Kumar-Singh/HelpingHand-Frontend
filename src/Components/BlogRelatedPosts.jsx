@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import BlogCard from "./BlogCard.jsx";
-import { blogData } from "../data/blogData.jsx";
+import { blogData } from "../data/blogData.js";
 
 const BlogRelatedPosts = ({ currentPostId, category }) => {
   // Find related posts: same category, exclude current post, limit to 3
