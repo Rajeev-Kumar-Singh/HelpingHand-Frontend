@@ -1,43 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "Components/ui/button";
-import { useToast } from "Components/ui/use-toast";
 import { ArrowRight } from "lucide-react";
-import educationimage from "../assests/educationimage.png";
-import medicalimage from "../assests/medicalimage.png";
-import freshwaterimage from "../assests/freshwaterimage.png";
+import { programData } from "data/programData.js";
 
 const Programs = () => {
-  const { toast } = useToast();
-
-  const programs = [
-    {
-      image: educationimage,
-      title: "Education for All",
-      description:
-        "Providing quality education to underprivileged children through scholarships, school infrastructure development, and teacher training programs. We believe education is the foundation for breaking the cycle of poverty.",
-    },
-    {
-      image: medicalimage,
-      title: "Healthcare Access",
-      description:
-        "Ensuring access to essential healthcare services through mobile clinics, health awareness campaigns, and partnerships with local medical facilities. Every person deserves quality healthcare.",
-    },
-    {
-      image: freshwaterimage,
-      title: "Clean Water Initiative",
-      description:
-        "Bringing clean water to communities in need through well construction, water purification systems, and sanitation education. Clean water is a fundamental human right.",
-    },
-  ];
-
-  const handleLearnMore = () => {
-    toast({
-      title: "Coming Soon",
-      description:
-        "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
-    });
-  };
+  const programs = programData;
 
   return (
     <section id="programs" className="py-20 bg-white">
@@ -52,12 +21,12 @@ const Programs = () => {
             Our Programs
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transforming lives through targeted initiatives that address
-            critical needs
+            Practical, high-impact initiatives designed around real community
+            needs and long-term outcomes
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <motion.div
               key={program.title}
@@ -84,12 +53,22 @@ const Programs = () => {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {program.description}
                 </p>
+                <div className="space-y-2 mb-6">
+                  <p className="text-sm text-emerald-700 font-semibold">
+                    {program.focus}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    Beneficiaries: {program.beneficiaries}
+                  </p>
+                </div>
                 <Button
-                  onClick={handleLearnMore}
+                  asChild
                   variant="outline"
                   className="w-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all duration-300"
                 >
-                  Learn More <ArrowRight className="ml-2" size={18} />
+                  <Link to={`/programs/${program.id}`}>
+                    Learn More <ArrowRight className="ml-2" size={18} />
+                  </Link>
                 </Button>
               </div>
             </motion.div>

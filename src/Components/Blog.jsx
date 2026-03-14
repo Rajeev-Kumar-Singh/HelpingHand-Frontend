@@ -54,8 +54,8 @@ const Blog = () => {
             Our Stories & News
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the latest updates, inspiring stories, and the impact we're
-            making together around the world.
+            Explore field updates, impact journeys, and community voices that
+            show how collective action is creating measurable change.
           </p>
         </motion.div>
 
