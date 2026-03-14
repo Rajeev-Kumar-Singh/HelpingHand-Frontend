@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
 // import { Button } from '@/components/ui/button.jsx';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +30,20 @@ const Header = () => {
   ];
 
   const scrollToSection = (sectionId) => {
+    if (location.pathname !== "/") {
+      navigate(`/#${sectionId}`);
+      setIsMenuOpen(false);
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const headerOffset = 88;
+      const targetPosition =
+        element.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+      window.scrollTo({ top: Math.max(targetPosition, 0), behavior: "smooth" });
+      window.history.replaceState(null, "", `/#${sectionId}`);
       setIsMenuOpen(false);
     }
   };
