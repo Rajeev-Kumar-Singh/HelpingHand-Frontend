@@ -13,21 +13,51 @@ const Programs = () => {
   const programs = [
     {
       image: educationimage,
-      title: "Education for All",
+      title: "Women Empowerment & Livelihoods",
       description:
-        "Providing quality education to underprivileged children through scholarships, school infrastructure development, and teacher training programs. We believe education is the foundation for breaking the cycle of poverty.",
+        "Skill development, digital literacy, self-help group strengthening, and entrepreneurship support that help women become financially independent and community leaders.",
+      focus: "Latest focus: enterprise incubation and market linkage",
+      beneficiaries: "Women and adolescent girls",
     },
     {
       image: medicalimage,
-      title: "Healthcare Access",
+      title: "Child Development & Protection",
       description:
-        "Ensuring access to essential healthcare services through mobile clinics, health awareness campaigns, and partnerships with local medical facilities. Every person deserves quality healthcare.",
+        "Integrated support for children through education continuity, nutrition, health camps, safe spaces, and prevention of exploitation, child labor, and early marriage.",
+      focus: "Latest focus: school retention and child safety systems",
+      beneficiaries: "Children and caregivers",
     },
     {
       image: freshwaterimage,
-      title: "Clean Water Initiative",
+      title: "Support for Poor Families",
       description:
-        "Bringing clean water to communities in need through well construction, water purification systems, and sanitation education. Clean water is a fundamental human right.",
+        "Food assistance, social security enrollment, emergency relief, and livelihood planning for low-income households to improve resilience and income stability.",
+      focus: "Latest focus: dignified aid and income recovery",
+      beneficiaries: "Economically vulnerable families",
+    },
+    {
+      image: educationimage,
+      title: "Legal Awareness & Rights",
+      description:
+        "Legal literacy drives, rights workshops, and referral support on domestic violence, child rights, documentation, welfare schemes, labor rights, and access to justice.",
+      focus: "Latest focus: legal aid camps and documentation support",
+      beneficiaries: "Women, children, and workers",
+    },
+    {
+      image: freshwaterimage,
+      title: "Wildlife Conservation Action",
+      description:
+        "Community awareness on biodiversity protection, habitat-friendly practices, anti-poaching awareness, and responsible waste management to reduce harm to local wildlife.",
+      focus: "Latest focus: community conservation volunteers",
+      beneficiaries: "Ecosystems and rural communities",
+    },
+    {
+      image: medicalimage,
+      title: "Cow Care & Welfare",
+      description:
+        "Cow welfare initiatives including rescue support, fodder and water drives, basic veterinary outreach, and sensitization on humane treatment and responsible care.",
+      focus: "Latest focus: seasonal fodder and shelter support",
+      beneficiaries: "Cattle-owning families and rescued cows",
     },
   ];
 
@@ -57,7 +87,7 @@ const Programs = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <motion.div
               key={program.title}
@@ -84,6 +114,14 @@ const Programs = () => {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {program.description}
                 </p>
+                <div className="space-y-2 mb-6">
+                  <p className="text-sm text-emerald-700 font-semibold">
+                    {program.focus}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    Beneficiaries: {program.beneficiaries}
+                  </p>
+                </div>
                 <Button
                   onClick={handleLearnMore}
                   variant="outline"

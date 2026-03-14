@@ -1,28 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Heart, Target, Users } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Heart, Target, Users } from "lucide-react";
 
 const About = () => {
   const values = [
     {
       icon: Heart,
-      title: 'Mission',
-      description: 'To empower communities through sustainable development, education, and healthcare initiatives that create lasting positive change in the lives of those we serve.'
+      title: "Mission",
+      description:
+        "To build safe, inclusive, and self-reliant communities by advancing women empowerment, child protection, legal awareness, and livelihood support for economically vulnerable families.",
     },
     {
       icon: Target,
-      title: 'Vision',
-      description: 'A world where everyone has access to basic needs, quality education, and opportunities to thrive, regardless of their circumstances or location.'
+      title: "Vision",
+      description:
+        "A society where every woman has equal opportunity, every child learns with dignity, every family can meet basic needs, and communities live in harmony with nature and animals.",
     },
     {
       icon: Users,
-      title: 'Core Values',
-      description: 'Integrity, compassion, innovation, and collaboration guide everything we do. We believe in transparency, accountability, and the power of community-driven solutions.'
-    }
+      title: "Core Values",
+      description:
+        "Compassion, justice, transparency, and participation guide our work. We co-create solutions with communities, protect rights, and ensure that support reaches those who need it most.",
+    },
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-emerald-50">
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-br from-gray-50 to-emerald-50"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +40,8 @@ const About = () => {
             About Our Foundation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Dedicated to creating meaningful impact through compassionate action and sustainable solutions
+            Dedicated to measurable, community-led impact across women
+            empowerment, child rights, legal awareness, and nature care
           </p>
         </motion.div>
 
