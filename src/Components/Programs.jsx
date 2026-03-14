@@ -1,73 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "Components/ui/button";
-import { useToast } from "Components/ui/use-toast";
 import { ArrowRight } from "lucide-react";
-import educationimage from "../assests/educationimage.png";
-import medicalimage from "../assests/medicalimage.png";
-import freshwaterimage from "../assests/freshwaterimage.png";
+import { programData } from "data/programData.js";
 
 const Programs = () => {
-  const { toast } = useToast();
-
-  const programs = [
-    {
-      image: educationimage,
-      title: "Women Empowerment & Livelihoods",
-      description:
-        "We equip women and adolescent girls with vocational skills, digital confidence, financial literacy, and enterprise support so they can earn sustainably and lead change in their communities.",
-      focus: "Latest focus: enterprise incubation and market linkage",
-      beneficiaries: "Women and adolescent girls",
-    },
-    {
-      image: medicalimage,
-      title: "Child Development & Protection",
-      description:
-        "Our child-centered model combines education continuity, nutrition, health screening, safe spaces, and prevention of exploitation, child labor, and early marriage.",
-      focus: "Latest focus: school retention and child safety systems",
-      beneficiaries: "Children and caregivers",
-    },
-    {
-      image: freshwaterimage,
-      title: "Support for Poor Families",
-      description:
-        "From emergency support to long-term livelihood planning, we help vulnerable families access food security, social protection schemes, and pathways to stable income.",
-      focus: "Latest focus: dignified aid and income recovery",
-      beneficiaries: "Economically vulnerable families",
-    },
-    {
-      image: educationimage,
-      title: "Legal Awareness & Rights",
-      description:
-        "We conduct legal literacy camps and rights workshops, and provide referral support on domestic violence, child rights, labor rights, documentation, and access to justice.",
-      focus: "Latest focus: legal aid camps and documentation support",
-      beneficiaries: "Women, children, and workers",
-    },
-    {
-      image: freshwaterimage,
-      title: "Wildlife Conservation Action",
-      description:
-        "Through community education and local partnerships, we promote biodiversity protection, habitat-friendly practices, anti-poaching awareness, and responsible waste management.",
-      focus: "Latest focus: community conservation volunteers",
-      beneficiaries: "Ecosystems and rural communities",
-    },
-    {
-      image: medicalimage,
-      title: "Cow Care & Welfare",
-      description:
-        "Our cow welfare work includes rescue coordination, fodder and water support, basic veterinary outreach, and awareness on humane treatment and responsible care.",
-      focus: "Latest focus: seasonal fodder and shelter support",
-      beneficiaries: "Cattle-owning families and rescued cows",
-    },
-  ];
-
-  const handleLearnMore = () => {
-    toast({
-      title: "Coming Soon",
-      description:
-        "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
-    });
-  };
+  const programs = programData;
 
   return (
     <section id="programs" className="py-20 bg-white">
@@ -123,11 +62,13 @@ const Programs = () => {
                   </p>
                 </div>
                 <Button
-                  onClick={handleLearnMore}
+                  asChild
                   variant="outline"
                   className="w-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all duration-300"
                 >
-                  Learn More <ArrowRight className="ml-2" size={18} />
+                  <Link to={`/programs/${program.id}`}>
+                    Learn More <ArrowRight className="ml-2" size={18} />
+                  </Link>
                 </Button>
               </div>
             </motion.div>
