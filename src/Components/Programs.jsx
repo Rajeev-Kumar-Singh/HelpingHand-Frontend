@@ -15,7 +15,7 @@ const Programs = () => {
       image: educationimage,
       title: "Women Empowerment & Livelihoods",
       description:
-        "Skill development, digital literacy, self-help group strengthening, and entrepreneurship support that help women become financially independent and community leaders.",
+        "We equip women and adolescent girls with vocational skills, digital confidence, financial literacy, and enterprise support so they can earn sustainably and lead change in their communities.",
       focus: "Latest focus: enterprise incubation and market linkage",
       beneficiaries: "Women and adolescent girls",
     },
@@ -23,7 +23,7 @@ const Programs = () => {
       image: medicalimage,
       title: "Child Development & Protection",
       description:
-        "Integrated support for children through education continuity, nutrition, health camps, safe spaces, and prevention of exploitation, child labor, and early marriage.",
+        "Our child-centered model combines education continuity, nutrition, health screening, safe spaces, and prevention of exploitation, child labor, and early marriage.",
       focus: "Latest focus: school retention and child safety systems",
       beneficiaries: "Children and caregivers",
     },
@@ -31,7 +31,7 @@ const Programs = () => {
       image: freshwaterimage,
       title: "Support for Poor Families",
       description:
-        "Food assistance, social security enrollment, emergency relief, and livelihood planning for low-income households to improve resilience and income stability.",
+        "From emergency support to long-term livelihood planning, we help vulnerable families access food security, social protection schemes, and pathways to stable income.",
       focus: "Latest focus: dignified aid and income recovery",
       beneficiaries: "Economically vulnerable families",
     },
@@ -39,7 +39,7 @@ const Programs = () => {
       image: educationimage,
       title: "Legal Awareness & Rights",
       description:
-        "Legal literacy drives, rights workshops, and referral support on domestic violence, child rights, documentation, welfare schemes, labor rights, and access to justice.",
+        "We conduct legal literacy camps and rights workshops, and provide referral support on domestic violence, child rights, labor rights, documentation, and access to justice.",
       focus: "Latest focus: legal aid camps and documentation support",
       beneficiaries: "Women, children, and workers",
     },
@@ -47,7 +47,7 @@ const Programs = () => {
       image: freshwaterimage,
       title: "Wildlife Conservation Action",
       description:
-        "Community awareness on biodiversity protection, habitat-friendly practices, anti-poaching awareness, and responsible waste management to reduce harm to local wildlife.",
+        "Through community education and local partnerships, we promote biodiversity protection, habitat-friendly practices, anti-poaching awareness, and responsible waste management.",
       focus: "Latest focus: community conservation volunteers",
       beneficiaries: "Ecosystems and rural communities",
     },
@@ -55,7 +55,7 @@ const Programs = () => {
       image: medicalimage,
       title: "Cow Care & Welfare",
       description:
-        "Cow welfare initiatives including rescue support, fodder and water drives, basic veterinary outreach, and sensitization on humane treatment and responsible care.",
+        "Our cow welfare work includes rescue coordination, fodder and water support, basic veterinary outreach, and awareness on humane treatment and responsible care.",
       focus: "Latest focus: seasonal fodder and shelter support",
       beneficiaries: "Cattle-owning families and rescued cows",
     },
@@ -82,8 +82,8 @@ const Programs = () => {
             Our Programs
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Transforming lives through targeted initiatives that address
-            critical needs
+            Practical, high-impact initiatives designed around real community
+            needs and long-term outcomes
           </p>
         </motion.div>
 

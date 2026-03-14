@@ -8,19 +8,19 @@ const About = () => {
       icon: Heart,
       title: "Mission",
       description:
-        "To build safe, inclusive, and self-reliant communities by advancing women empowerment, child protection, legal awareness, and livelihood support for economically vulnerable families.",
+        "To advance dignity and opportunity by empowering women, protecting children, improving legal literacy, and strengthening livelihoods for low-income families through practical, community-led action.",
     },
     {
       icon: Target,
       title: "Vision",
       description:
-        "A society where every woman has equal opportunity, every child learns with dignity, every family can meet basic needs, and communities live in harmony with nature and animals.",
+        "A just and compassionate society where every woman can lead, every child can thrive, every family can live with security, and communities protect nature and animals for future generations.",
     },
     {
       icon: Users,
       title: "Core Values",
       description:
-        "Compassion, justice, transparency, and participation guide our work. We co-create solutions with communities, protect rights, and ensure that support reaches those who need it most.",
+        "Compassion, accountability, inclusion, and integrity define our work. We listen first, act with transparency, and build partnerships that create measurable, sustainable impact.",
     },
   ];
 
@@ -40,8 +40,8 @@ const About = () => {
             About Our Foundation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Dedicated to measurable, community-led impact across women
-            empowerment, child rights, legal awareness, and nature care
+            Building lasting change through women empowerment, child rights,
+            legal awareness, and community-centered development
           </p>
         </motion.div>
 
