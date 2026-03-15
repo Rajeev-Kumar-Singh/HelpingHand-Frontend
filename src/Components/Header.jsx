@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
+import { isAdminLoggedIn } from "lib/adminAuth";
 // import { Button } from '@/components/ui/button.jsx';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const adminLoggedIn = isAdminLoggedIn();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -76,6 +78,14 @@ const Header = () => {
                 {link.name}
               </button>
             ))}
+            <button
+              onClick={() =>
+                navigate(adminLoggedIn ? "/admin/dashboard" : "/admin/signin")
+              }
+              className="px-4 py-2 rounded-full bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition-colors"
+            >
+              {adminLoggedIn ? "Dashboard" : "Sign In"}
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,6 +118,17 @@ const Header = () => {
                     {link.name}
                   </button>
                 ))}
+                <button
+                  onClick={() => {
+                    navigate(
+                      adminLoggedIn ? "/admin/dashboard" : "/admin/signin",
+                    );
+                    setIsMenuOpen(false);
+                  }}
+                  className="block w-full text-left text-emerald-700 font-semibold py-2"
+                >
+                  {adminLoggedIn ? "Admin Dashboard" : "Admin Sign In"}
+                </button>
               </div>
             </motion.div>
           )}
