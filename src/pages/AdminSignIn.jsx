@@ -52,8 +52,13 @@ const AdminSignIn = () => {
         <title>Admin Sign In | Yashashvi Foundation</title>
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-cyan-50 flex items-center justify-center px-4 py-16">
-        <div className="w-full max-w-md bg-white border border-emerald-100 rounded-2xl shadow-xl p-8">
+      <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_15%_20%,#d1fae5_0%,#f0fdf4_30%,#ecfeff_65%,#f8fafc_100%)] flex items-center justify-center px-4 py-16">
+        <div className="pointer-events-none absolute -top-24 -left-20 h-72 w-72 rounded-full bg-emerald-300/30 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-cyan-300/30 blur-3xl" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(16,185,129,0.06)_0%,rgba(6,182,212,0.02)_45%,rgba(2,132,199,0.05)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(16,185,129,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.12)_1px,transparent_1px)] [background-size:44px_44px]" />
+
+        <div className="relative w-full max-w-md bg-white/90 backdrop-blur-md border border-emerald-100 rounded-2xl shadow-2xl p-8">
           <div className="text-center mb-8">
             <div className="mx-auto w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
               <ShieldCheck size={28} />

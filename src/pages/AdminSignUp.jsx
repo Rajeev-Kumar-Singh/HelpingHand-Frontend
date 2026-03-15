@@ -74,8 +74,13 @@ const AdminSignUp = () => {
         <title>Admin Sign Up | Yashashvi Foundation</title>
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-emerald-50 flex items-center justify-center px-4 py-16">
-        <div className="w-full max-w-md bg-white border border-emerald-100 rounded-2xl shadow-xl p-8">
+      <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_80%_10%,#cffafe_0%,#f0fdfa_35%,#ecfdf5_65%,#f8fafc_100%)] flex items-center justify-center px-4 py-16">
+        <div className="pointer-events-none absolute -top-16 -right-20 h-72 w-72 rounded-full bg-cyan-300/30 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -left-16 h-80 w-80 rounded-full bg-emerald-300/30 blur-3xl" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(115deg,rgba(6,182,212,0.05)_0%,rgba(16,185,129,0.03)_40%,rgba(20,184,166,0.07)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(6,182,212,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.14)_1px,transparent_1px)] [background-size:46px_46px]" />
+
+        <div className="relative w-full max-w-md bg-white/90 backdrop-blur-md border border-emerald-100 rounded-2xl shadow-2xl p-8">
           <div className="text-center mb-8">
             <div className="mx-auto w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
               <UserPlus size={28} />
