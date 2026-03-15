@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Facebook,
   Twitter,
@@ -7,8 +8,8 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import rajeevImg from "../assests/Rajeev_Image.png";
-import satyamImg from "../assests/Satyam_Image.png";
+import { Button } from "Components/ui/button.jsx";
+import { teamData } from "data/teamData.js";
 
 const Team = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -21,45 +22,7 @@ const Team = () => {
       .join("")
       .toUpperCase();
 
-  const team = [
-    {
-      image: rajeevImg,
-      name: "Rajeev Kumar",
-      role: "Executive Director",
-      bio: "Leading our mission with passion and dedication for over 5 years, Rajeev brings extensive experience in international development and community empowerment.",
-    },
-    {
-      image: satyamImg,
-      name: "Satyam Kumar",
-      role: "Program Director",
-      bio: "Overseeing our global initiatives with strategic vision, Satyam ensures every program delivers measurable impact and sustainable results.",
-    },
-    {
-      name: "Golden Singh",
-      role: "Community Outreach",
-      bio: "Building bridges with local communities worldwide, Golden fosters partnerships that create lasting change and empower grassroots leaders.",
-    },
-    {
-      name: "Kunal Kishore",
-      role: "Finance Manager",
-      bio: "Ensuring transparency and accountability in all our operations, Kunal manages resources with integrity to maximize our impact.",
-    },
-    {
-      name: "Sanjeev Kumar",
-      role: "Team Member",
-      bio: "Supporting our mission through dedicated collaboration and a strong commitment to community development.",
-    },
-    {
-      name: "Riya Singh",
-      role: "Team Member",
-      bio: "Contributing fresh ideas and consistent effort to help our programs reach more people in need.",
-    },
-    {
-      name: "Madhuri Singh",
-      role: "Team Member",
-      bio: "Working closely with the team to strengthen outreach efforts and deliver meaningful impact.",
-    },
-  ];
+  const team = teamData;
 
   const membersPerSlide = 4;
   const teamSlides = [];
@@ -191,6 +154,13 @@ const Team = () => {
                           <p className="text-gray-600 text-sm leading-relaxed">
                             {member.bio}
                           </p>
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="mt-5 w-full border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white"
+                          >
+                            <Link to={`/team/${member.id}`}>View Profile</Link>
+                          </Button>
                         </div>
                       </div>
                     </motion.div>

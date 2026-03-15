@@ -4,6 +4,7 @@ import ScrollToTop from "Components/ScrollToTop";
 import HomePage from "pages/HomePage";
 import BlogPostDetail from "pages/BlogPostDetail.jsx";
 import ProgramDetail from "pages/ProgramDetail.jsx";
+import TeamMemberDetail from "pages/TeamMemberDetail.jsx";
 import { Toaster } from "Components/ui/toaster";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blog/:postId" element={<BlogPostDetail />} />
         <Route path="/programs/:programId" element={<ProgramDetail />} />
+        <Route path="/team/:memberId" element={<TeamMemberDetail />} />
       </Routes>
       <Toaster />
     </Router>
