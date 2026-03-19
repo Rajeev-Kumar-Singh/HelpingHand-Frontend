@@ -9,6 +9,7 @@ import AdminSignIn from "pages/AdminSignIn.jsx";
 import AdminSignUp from "pages/AdminSignUp.jsx";
 import AdminDashboard from "pages/AdminDashboard.jsx";
 import ProtectedAdminRoute from "Components/ProtectedAdminRoute.jsx";
+import ChatbotAssistant from "Components/ChatbotAssistant";
 import { Toaster } from "Components/ui/toaster";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           }
         />
       </Routes>
+      <ChatbotAssistant />
       <Toaster />
     </Router>
   );
